@@ -1,0 +1,14 @@
+artifacts_root: artifacts
+
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  source_URL: https://github.com/jorge-rivero/raw-data/raw/main/summarizer-data.zip
+  local_data_file: artifacts/data_ingestion/summarizer-data.zip
+  unzip_dir: artifacts/data_ingestion
+
+data_validation:
+  root_dir: artifacts/data_validation
+  status_file: artifacts/data_validation/status.txt
+  all_required_files: ["train", "test", "validation"]
+
